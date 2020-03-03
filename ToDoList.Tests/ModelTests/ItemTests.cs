@@ -8,10 +8,11 @@ namespace ToDoList.Tests
   [TestClass]
   public class ItemTests : IDisposable
   {
-      public void Dispose()
-      {
-          Item.ClearAll();
-      }
+		public void Dispose()
+		{
+			Item.ClearAll();
+		}
+
    [TestMethod]
     public void ItemConstructor_CreatesInstanceOfItem_Item()
     {
@@ -22,14 +23,15 @@ namespace ToDoList.Tests
    [TestMethod]
     public void GetDescription_ReturnsDescription_String()
     {
-    // arrange
+    	// arrange
       string description = "Walk the dog.";
       Item newItem = new Item(description);
-    //   act
+    	//   act
       string result = newItem.Description;
-    //   assert
+    	//   assert
       Assert.AreEqual(description, result);
     }
+
     [TestMethod]
     public void SetDescription_SetDescription_String()
     {
@@ -45,20 +47,21 @@ namespace ToDoList.Tests
       //Assert
       Assert.AreEqual(updatedDescription, result);
     }
+
     [TestMethod]
     public void GetAll_ReturnsEmptyList_ItemList()
     {
-        // arrange
-          List<Item> newList = new List<Item> { };
+			// arrange
+			List<Item> newList = new List<Item> { };
 
-        // Act
-        List<Item> result = Item.GetAll();
-        foreach (Item thisItem in result)
-        {
-            Console.WriteLine("Output from empty list GetAll test:" + thisItem.Description);
-        }
-        // Assert
-        CollectionAssert.AreEqual(newList, result);
+			// Act
+			List<Item> result = Item.GetAll();
+			foreach (Item thisItem in result)
+			{
+				Console.WriteLine("Output from empty list GetAll test:" + thisItem.Description);
+			}
+			// Assert
+			CollectionAssert.AreEqual(newList, result);
     }
 
     [TestMethod]
@@ -74,12 +77,11 @@ namespace ToDoList.Tests
     //Act
     List<Item> result = Item.GetAll();
     foreach (Item thisItem in result)
-   {
-       Console.WriteLine("Output from second GetAll test:" + thisItem.Description);
-   } 
+    {
+      Console.WriteLine("Output from second GetAll test:" + thisItem.Description);
+    } 
     //Assert
     CollectionAssert.AreEqual(newList, result);
     }
-
   }
 }

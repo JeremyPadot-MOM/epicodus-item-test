@@ -7,3 +7,5 @@
 /Users/Guest/Desktop/ToDo.Solution/ToDoList/obj/Debug/netcoreapp2.2/ToDoList.AssemblyInfo.cs
 /Users/Guest/Desktop/ToDo.Solution/ToDoList/obj/Debug/netcoreapp2.2/ToDoList.dll
 /Users/Guest/Desktop/ToDo.Solution/ToDoList/obj/Debug/netcoreapp2.2/ToDoList.pdb
+/Users/Guest/Desktop/ToDo.Solution/ToDoList/bin/Debug/netcoreapp2.2/ToDoList.runtimeconfig.json
+/Users/Guest/Desktop/ToDo.Solution/ToDoList/bin/Debug/netcoreapp2.2/ToDoList.runtimeconfig.dev.json
